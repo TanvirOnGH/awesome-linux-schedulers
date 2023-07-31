@@ -24,3 +24,15 @@ An Awesome & Curated List of Schedulers for Linux.
 1. [deadline](https://en.wikipedia.org/wiki/Deadline_scheduler) - Introduced in version 2.4.10 and is designed to optimize I/O performance for both rotational (e.g., traditional hard disk drives) and non-rotational (e.g., solid-state drives) storage devices, focusing on meeting I/O request deadlines.
 2. [noop: No-operation](https://en.wikipedia.org/wiki/Noop_scheduler) - Designed to be a simple and minimalistic scheduler that works effectively with certain types of storage devices, particularly with modern non-rotational storage media like solid-state drives (SSDs). It's very minimalistic and lacks scheduling overhead.
 3. [CFQ: Completely Fair Queueing](https://www.kernel.org/doc/Documentation/block/cfq-iosched.txt) - Designed to provide fairness and good overall system performance, especially for rotational storage devices like traditional hard disk drives (HDDs), focusing on fairness among processes accessing storage devices.
+
+## Misc
+* [Project C](https://gitlab.com/alfredchen/projectc) - A project to provide BMQ and PDS-mq cpu scheduler in one single patch set.
+* [CK Kolivas' Patches Web Directory](http://ck.kolivas.org/patches/) - CK's web directory providing MuQSS, BFS and other patchsets.
+* [Linux Baby](https://github.com/hamadmarri/linux-baby) - Linux kernel with baby patchset applied.
+* [Linux CachyOS](https://github.com/CachyOS/linux-cachyos) - Linux kernel with various patchsets applied including bore, eevdf, TT, BMQ, PDS, CacULE+RDB and CFS.
+* [Xanmod Kernel](https://xanmod.org) - Custom linux kernel built to provide a stable, smooth and solid system experience.
+* [linux-pf](https://codeberg.org/pf-kernel/linux) - Maintained by a kernel engineer ([post-factum](https://pfkernel.natalenko.name/)), contains patchsets not merged into the official kernel mainline.
+* [Liquorix Kernel](https://liquorix.net) - An enthusiast Linux kernel designed for uncompromised responsiveness in interactive systems, enabling low latency compute in A/V production, and reduced frame time deviations in games.
+* [Kernel patches by Sir lucjan](https://github.com/sirlucjan/kernel-patches) -  Curated custom Linux kernel patches.
+* [clearlinux-pkgs/linux](https://github.com/clearlinux-pkgs/linux) - Linux kernel patches by [clear linux](https://clearlinux.org) optimized for Intel systems.
+* [linux-nitrous](https://gitlab.com/xdevs23/linux-nitrous) - Linux kernel with patchsets optimized for Intel Skylake and newer systems.
