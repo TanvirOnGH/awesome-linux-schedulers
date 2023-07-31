@@ -11,6 +11,8 @@ An Awesome & Curated List of Schedulers for Linux.
 7. [BFS: Brain Fuck Scheduler](https://en.wikipedia.org/wiki/Brain_Fuck_Scheduler) - Designed to be simple and minimalistic, it is an experimental process scheduler designed for low-latency and improved desktop interactivity.
 8. [CacULE](https://github.com/hamadmarri/cacule-cpu-scheduler) - [CFS](https://docs.kernel.org/scheduler/sched-design-CFS.html) patchset that is based on interactivity score mechanism which is inspired by the [ULE](https://en.wikipedia.org/wiki/ULE_scheduler) scheduler ([FreeBSD scheduler](https://papers.freebsd.org/2003/bsdcon/jeff-ule_scheduler/)), for enhancing system responsiveness/latency. Performs better with it's own experimental load balancer called [RDB (Response Driven Balancer)](https://github.com/hamadmarri/cacule-cpu-scheduler#response-driven-balancer-rdb).
 9. [Cachy](https://github.com/hamadmarri/cacule-cpu-scheduler/tree/c68d210538fabac002acb84d99e9c3d365edc14f) - Earlier generation/version of [CacULE](https://github.com/hamadmarri/cacule-cpu-scheduler).
+10. [PDS-MQ: Priority and Deadline based Skiplist multiple queue](https://www.phoronix.com/news/PDS-MQ-Linux-4.17) - Designed with VRQ (Variable Run Queue) support, derived from [BFS: Brain Fuck Scheduler](https://en.wikipedia.org/wiki/Brain_Fuck_Scheduler).
+11. [BMQ: Bit Map Queue](https://www.phoronix.com/news/Linux-BitMap-Queue-BMQ) - Design based on existing [PDS](https://www.phoronix.com/news/PDS-MQ-Linux-4.17) development experience and inspired by the scheduler found in [Zircon](https://fuchsia.dev/fuchsia-src/concepts/kernel) by Google.
 
 ## I/O Schedulers
 ### Multiqueue
