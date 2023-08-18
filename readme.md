@@ -3,6 +3,7 @@
 An Awesome & Curated List of Schedulers for Linux.
 
 ## Contents
+
 - [CPU Schedulers](#cpu-schedulers)
   - [Built-in](#built-in)
   - [Custom](#custom)
