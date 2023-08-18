@@ -1,0 +1,38 @@
+name: Format Markdown Files
+on:
+  push:
+    paths:
+      - "**.md"
+  workflow_dispatch:
+
+jobs:
+  format_markdown:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Format Markdown files
+        run: npx prettier --write "**/*.md"
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -a -m "chore: format Markdown files" || true
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: ${{ github.ref }}
