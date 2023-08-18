@@ -1,12 +1,16 @@
 ## Awesome Linux Schedulers [![Awesome Linux CPU Schedulers](https://awesome.re/badge-flat.svg)](https://github.com/TanvirOnGH/awesome-linux-cpu-schedulers)
+
 An Awesome & Curated List of Schedulers for Linux.
 
 ## CPU Schedulers
+
 ### Built-in
+
 1. [CFS: Completely Fair Scheduler](https://docs.kernel.org/scheduler/sched-design-CFS.html) - The default process scheduler used in the Linux kernel since version 2.6.23. It is designed to provide fairness and good overall system performance, especially in multi-core systems, with it's "fairness" mechanism.
 2. [EEVDF: Earliest Eligible Virtual Dealine First](https://lwn.net/Articles/925371/) - Designed to run the processes with the earliest virtual deadline first, for providing low-latency.
 
 ### Custom
+
 1. [BORE: Burst-Oriented Response Enhancer](https://github.com/firelzrd/bore-scheduler) - Enhanced version of [CFS](https://docs.kernel.org/scheduler/sched-design-CFS.html) and [EEVDF](https://lwn.net/Articles/925371/), designed to provide high performance while delivering resilient responsiveness to user input under as versatile load scenario as possible.
 2. [Baby](https://github.com/hamadmarri/Baby-CPU-Scheduler) - Designed to be very basic and lightweight without compromising performance by disabling a lot of features. Great base ground CPU scheduler on Linux for educational purpose.
 3. [TT: Task Type](https://github.com/hamadmarri/TT-CPU-Scheduler) - Designed to detect tasks types based on their behaviors and control the scheduling based on their types, resulting in to have more control over the task to run next on the CPU.
@@ -18,25 +22,29 @@ An Awesome & Curated List of Schedulers for Linux.
 9. [BMQ: Bit Map Queue](https://www.phoronix.com/news/Linux-BitMap-Queue-BMQ) - Design based on existing [PDS](https://www.phoronix.com/news/PDS-MQ-Linux-4.17) development experience and inspired by the scheduler found in [Zircon](https://fuchsia.dev/fuchsia-src/concepts/kernel) by Google.
 
 ## I/O Schedulers
+
 ### Multiqueue
+
 1. [BFQ: Budget Fair Queueing](https://docs.kernel.org/block/bfq-iosched.html) - Designed to improve storage I/O performance, especially for block devices like hard drives and solid-state drives (SSDs), with ability to provide low-latency and fairness for I/O operations.
 2. [Kyber](https://lwn.net/Articles/720071/) - Introduced in version 4.12. It is designed to improve storage I/O performance, especially for modern non-rotational storage devices like solid-state drives (SSDs) and eMMC storage, with low overhead.
-3. [mq-deadline](https://github.com/torvalds/linux/blob/master/block/mq-deadline.c) -  Adaptation of the legacy [deadline](https://en.wikipedia.org/wiki/Deadline_scheduler) scheduler, for the [blk-mq](https://docs.kernel.org/block/blk-mq.html) scheduling framework, it is designed to group queued I/O requests into batches.
+3. [mq-deadline](https://github.com/torvalds/linux/blob/master/block/mq-deadline.c) - Adaptation of the legacy [deadline](https://en.wikipedia.org/wiki/Deadline_scheduler) scheduler, for the [blk-mq](https://docs.kernel.org/block/blk-mq.html) scheduling framework, it is designed to group queued I/O requests into batches.
 
 ### Non-multiqueue
+
 1. [deadline](https://en.wikipedia.org/wiki/Deadline_scheduler) - Introduced in version 2.4.10 and is designed to optimize I/O performance for both rotational (e.g., traditional hard disk drives) and non-rotational (e.g., solid-state drives) storage devices, focusing on meeting I/O request deadlines.
 2. [noop: No-operation](https://en.wikipedia.org/wiki/Noop_scheduler) - Designed to be a simple and minimalistic scheduler that works effectively with certain types of storage devices, particularly with modern non-rotational storage media like solid-state drives (SSDs). It's very minimalistic and lacks scheduling overhead.
 3. [CFQ: Completely Fair Queueing](https://www.kernel.org/doc/Documentation/block/cfq-iosched.txt) - Designed to provide fairness and good overall system performance, especially for rotational storage devices like traditional hard disk drives (HDDs), focusing on fairness among processes accessing storage devices.
 
 ## Misc
-* [Project C](https://gitlab.com/alfredchen/projectc) - A project to provide BMQ and PDS-mq cpu scheduler in one single patch set.
-* [CK Kolivas' Patches Web Directory](http://ck.kolivas.org/patches/) - CK's web directory providing MuQSS, BFS and other patchsets.
-* [Linux Baby](https://github.com/hamadmarri/linux-baby) - Linux kernel with baby patchset applied.
-* [Linux CachyOS](https://github.com/CachyOS/linux-cachyos) - Linux kernel with various patchsets applied including bore, eevdf, TT, BMQ, PDS, CacULE+RDB and CFS.
-* [Xanmod Kernel](https://xanmod.org) - Custom linux kernel built to provide a stable, smooth and solid system experience.
-* [linux-pf](https://codeberg.org/pf-kernel/linux) - Maintained by a kernel engineer ([post-factum](https://pfkernel.natalenko.name/)), contains patchsets not merged into the official kernel mainline.
-* [Zen Kernel](https://github.com/zen-kernel/zen-kernel) - Result of a collaborative effort of kernel hackers to provide the best Linux kernel possible for everyday systems.
-* [Liquorix Kernel](https://liquorix.net) - An enthusiast Linux kernel designed for uncompromised responsiveness in interactive systems, enabling low latency compute in A/V production, and reduced frame time deviations in games.
-* [Kernel patches by Sir lucjan](https://github.com/sirlucjan/kernel-patches) -  Curated custom Linux kernel patches.
-* [clearlinux-pkgs/linux](https://github.com/clearlinux-pkgs/linux) - Linux kernel patches by [clear linux](https://clearlinux.org) optimized for Intel systems.
-* [linux-nitrous](https://gitlab.com/xdevs23/linux-nitrous) - Linux kernel with patchsets optimized for Intel Skylake and newer systems.
+
+- [Project C](https://gitlab.com/alfredchen/projectc) - A project to provide BMQ and PDS-mq cpu scheduler in one single patch set.
+- [CK Kolivas' Patches Web Directory](http://ck.kolivas.org/patches/) - CK's web directory providing MuQSS, BFS and other patchsets.
+- [Linux Baby](https://github.com/hamadmarri/linux-baby) - Linux kernel with baby patchset applied.
+- [Linux CachyOS](https://github.com/CachyOS/linux-cachyos) - Linux kernel with various patchsets applied including bore, eevdf, TT, BMQ, PDS, CacULE+RDB and CFS.
+- [Xanmod Kernel](https://xanmod.org) - Custom linux kernel built to provide a stable, smooth and solid system experience.
+- [linux-pf](https://codeberg.org/pf-kernel/linux) - Maintained by a kernel engineer ([post-factum](https://pfkernel.natalenko.name/)), contains patchsets not merged into the official kernel mainline.
+- [Zen Kernel](https://github.com/zen-kernel/zen-kernel) - Result of a collaborative effort of kernel hackers to provide the best Linux kernel possible for everyday systems.
+- [Liquorix Kernel](https://liquorix.net) - An enthusiast Linux kernel designed for uncompromised responsiveness in interactive systems, enabling low latency compute in A/V production, and reduced frame time deviations in games.
+- [Kernel patches by Sir lucjan](https://github.com/sirlucjan/kernel-patches) - Curated custom Linux kernel patches.
+- [clearlinux-pkgs/linux](https://github.com/clearlinux-pkgs/linux) - Linux kernel patches by [clear linux](https://clearlinux.org) optimized for Intel systems.
+- [linux-nitrous](https://gitlab.com/xdevs23/linux-nitrous) - Linux kernel with patchsets optimized for Intel Skylake and newer systems.
