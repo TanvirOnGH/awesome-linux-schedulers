@@ -26,13 +26,7 @@ jobs:
       - name: Format Markdown files
         run: npx prettier --write "**/*.md"
 
-      - name: Commit changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -a -m "chore: format Markdown files" || true
-
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          branch: ${{ github.ref }}
+          commit_message: "chore: format markdown files"
