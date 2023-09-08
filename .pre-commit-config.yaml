@@ -1,5 +1,5 @@
 repos:
--   repo: https://github.com/sirwart/ripsecrets
+  - repo: https://github.com/sirwart/ripsecrets
     rev: v0.1.6
     hooks:
-    -   id: ripsecrets
+      - id: ripsecrets
