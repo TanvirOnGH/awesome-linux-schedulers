@@ -35,6 +35,7 @@ An Awesome & Curated List of Schedulers for Linux.
 * [Linux CachyOS](https://github.com/CachyOS/linux-cachyos) - Linux kernel with various patchsets applied including bore, eevdf, TT, BMQ, PDS, CacULE+RDB and CFS.
 * [Xanmod Kernel](https://xanmod.org) - Custom linux kernel built to provide a stable, smooth and solid system experience.
 * [linux-pf](https://codeberg.org/pf-kernel/linux) - Maintained by a kernel engineer ([post-factum](https://pfkernel.natalenko.name/)), contains patchsets not merged into the official kernel mainline.
+* [Zen Kernel](https://github.com/zen-kernel/zen-kernel) - Result of a collaborative effort of kernel hackers to provide the best Linux kernel possible for everyday systems.
 * [Liquorix Kernel](https://liquorix.net) - An enthusiast Linux kernel designed for uncompromised responsiveness in interactive systems, enabling low latency compute in A/V production, and reduced frame time deviations in games.
 * [Kernel patches by Sir lucjan](https://github.com/sirlucjan/kernel-patches) -  Curated custom Linux kernel patches.
 * [clearlinux-pkgs/linux](https://github.com/clearlinux-pkgs/linux) - Linux kernel patches by [clear linux](https://clearlinux.org) optimized for Intel systems.
