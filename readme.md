@@ -2,6 +2,14 @@
 
 An Awesome & Curated List of Schedulers for Linux.
 
+## Contents
+- [CPU Schedulers](#cpu-schedulers)
+  - [Built-in](#built-in)
+  - [Custom](#custom)
+- [I/O Schedulers](#io-schedulers)
+  - [Multiqueue](#multiqueue)
+  - [Non-multiqueue](#non-multiqueue)
+
 ## CPU Schedulers
 
 ### Built-in
