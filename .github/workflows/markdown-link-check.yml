@@ -1,0 +1,29 @@
+name: Check Markdown Links
+
+on:
+  push:
+    paths:
+      - "**.md"
+  schedule:
+    - cron: "0 0 */2 * *"
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '>=14.0.0'
+
+      - name: Install dependencies
+        run: npm install -g markdown-link-check
+
+      - name: Find and check Markdown files
+        run: |
+          find . -name "*.md" -exec echo "Checking links in {}" \;
+          find . -name "*.md" -exec markdown-link-check {} \;
