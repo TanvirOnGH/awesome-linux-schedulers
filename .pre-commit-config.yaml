@@ -3,3 +3,8 @@ repos:
     rev: v0.1.8
     hooks:
       - id: ripsecrets
+
+  - repo: https://github.com/trufflesecurity/trufflehog
+    rev: v3.81.5
+    hooks:
+      - id: trufflehog
